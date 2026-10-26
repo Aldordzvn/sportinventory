@@ -1,0 +1,8 @@
+<nav>
+    @for (item of items; track item.route) {
+        <a [routerLink]="item.route" routerLinkActive="active">
+            <app-icon [name]="item.icon"></app-icon>
+            <span> {{item.label}} </span>
+        </a>
+    }
+</nav>
